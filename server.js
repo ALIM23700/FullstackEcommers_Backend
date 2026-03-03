@@ -1,6 +1,6 @@
 const app=require("./app")
 const dotenv=require('dotenv')
-require("../Backend/models/model.db")
+require("./models/model.db")
 
 dotenv.config();
 
