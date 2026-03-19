@@ -20,15 +20,15 @@ const orderSchema = new mongoose.Schema(
       },
     ],
     paymentInfo: {
-      id: { type: String, required: true },
-      status: { type: String, required: true },
+      id: { type: String },          // transactionId
+      status: { type: String },      // pending / paid / failed
     },
     totalPrice: { type: Number, required: true },
     shippingAddress: { type: String, required: true },
     orderStatus: {
       type: String,
-      enum: ["Processing", "Delivered"],
-      default: "Processing",
+      enum: ["Pending", "Processing", "Delivered"], // Added "Pending"
+      default: "Pending",
       required: true,
     },
     isDelivered: { type: Boolean, default: false },
