@@ -78,7 +78,7 @@ router5.post("/payment/success/:tran_id", async (req, res) => {
       } else {
         console.log("Payment verification failed", response.data);
         // Still redirect frontend but show failed
-        return res.redirect(`http://localhost:5173/payment/fail/${tran_id}`);
+        return res.redirect(`https://fullstack-ecommers-frontend.vercel.app/payment/fail/${tran_id}`);
       }
     } else {
       // Sandbox manual click
@@ -90,7 +90,7 @@ router5.post("/payment/success/:tran_id", async (req, res) => {
     }
 
     // ✅ Redirect to frontend PaymentSuccess page
-    return res.redirect(`http://localhost:5173/payment/success/${tran_id}`);
+    return res.redirect(`https://fullstack-ecommers-frontend.vercel.app/payment/success/${tran_id}`);
   } catch (err) {
     console.error(err);
     return res.status(500).json({ message: "Server error", error: err.message });
@@ -107,7 +107,7 @@ router5.post("/payment/fail/:tran_id", async (req, res) => {
     );
   }
   // Redirect frontend fail page
-  return res.redirect(`http://localhost:5173/payment/fail/${tran_id}`);
+  return res.redirect(`https://fullstack-ecommers-frontend.vercel.app/payment/fail/${tran_id}`);
 });
 
 // --- Step 4: Cancel ---
@@ -120,7 +120,7 @@ router5.post("/payment/cancel/:tran_id", async (req, res) => {
     );
   }
   // Redirect frontend cancel page
-  return res.redirect(`http://localhost:5173/payment/cancel/${tran_id}`);
+  return res.redirect(`https://fullstack-ecommers-frontend.vercel.app/payment/cancel/${tran_id}`);
 });
 
 module.exports = router5;
