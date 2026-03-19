@@ -30,9 +30,9 @@ router5.post("/payment", async (req, res) => {
     currency: "BDT",
     tran_id: transactionId,
     // Backend handles SSLCommerz callbacks
-    success_url: `http://localhost:3000/api/v1/payment/success/${transactionId}`,
-    fail_url:    `http://localhost:3000/api/v1/payment/fail/${transactionId}`,
-    cancel_url:  `http://localhost:3000/api/v1/payment/cancel/${transactionId}`,
+    success_url: `https://fullstackecommers-backend-uerv.onrender.com/api/v1/payment/success/${transactionId}`,
+    fail_url:    `https://fullstackecommers-backend-uerv.onrender.com/api/v1/payment/fail/${transactionId}`,
+    cancel_url:  `https://fullstackecommers-backend-uerv.onrender.com/api/v1/payment/cancel/${transactionId}`,
     cus_name: name,
     cus_email: email,
     cus_phone: phone,
