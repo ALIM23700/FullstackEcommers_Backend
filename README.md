@@ -56,24 +56,27 @@ npm start
 # 6. Server will run at:
 http://localhost:4000
 
-📁 Project Structure
-FullstackEcommers_Backend/
-├── controllers/       → Handles request logic
-├── models/            → MongoDB schemas
-├── routes/            → API routes
-├── middleware/        → Authentication & error handling
-├── utils/             → Helper functions
-├── .env               → Environment variables
-├── server.js          → Entry point
-└── package.json
+# 📁 Project Structure
+
+FullstackEcommers_Backend/  
+├── controllers/       → Handles request logic  
+├── models/            → MongoDB schemas  
+├── routes/            → API routes  
+├── middleware/        → Authentication & error handling  
+├── utils/             → Helper functions  
+├── .env               → Environment variables  
+├── server.js          → Entry point  
+└── package.json  
+
+---
 
 ## 🚀 Future Improvements
 
-- Add unit and integration tests
-- Enhance error handling and logging
-- Implement product image upload (Cloudinary or AWS S3)
-- Improve performance & query optimization
-- Add email notifications for orders
+- Add unit and integration tests  
+- Enhance error handling and logging  
+- Implement product image upload (Cloudinary or AWS S3)  
+- Improve performance & query optimization  
+- Add email notifications for orders  
 
 ---
 
